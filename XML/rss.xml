@@ -1,0 +1,189 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rss version='2.0'>
+<channel>
+<title>算数の電卓</title>
+<link>https://k3su.xyz/</link>
+<description>算数の計算を電卓でやるように簡単な入力で計算できるサイトです。面倒な計算も早く簡単にでき宿題やテストの答え合わせなどにご利用ください。/</description>
+<item>
+<title>人口密度を求める</title>
+<link>https://k3su.xyz/unit/popu-dens.php</link>
+<description>人数と面積から人口密度を計算します。人口密度から人数や面積を逆算することもできます。</description>
+<pubDate>Thu, 28 Sep 23 10:41:05 +0900</pubDate>
+</item>
+<item>
+<title>方程式</title>
+<link>https://k3su.xyz/calc/linear-equation.php</link>
+<description>入力された方程式を解きます。カッコがある方程式や小数・分数がある方程式でも解くことができます。</description>
+<pubDate>Fri, 22 Sep 23 15:33:21 +0900</pubDate>
+</item>
+<item>
+<title>式の展開</title>
+<link>https://k3su.xyz/calc/unfoid.php</link>
+<description>入力された式の展開をおこないます。カッコや文字が多い複雑な式の展開も簡単におこなうことができます。</description>
+<pubDate>Sun, 03 Sep 23 15:07:42 +0900</pubDate>
+</item>
+<item>
+<title>平方根・累乗根</title>
+<link>https://k3su.xyz/calc/root.php</link>
+<description>対象の数の平方根・累乗根を計算します。平方根・累乗根の算出にご活用ください。</description>
+<pubDate>Sun, 11 Jun 23 02:16:44 +0900</pubDate>
+</item>
+<item>
+<title>中学数学の問題出題ツール</title>
+<link>https://k3su.xyz/qm/</link>
+<description>中学数学の問題を出題するツール一覧です。中学数学の問題をプログラムで作成して出題します。問題を解く反復練習にご利用ください。</description>
+<pubDate>Thu, 18 May 23 01:40:19 +0900</pubDate>
+</item>
+<item>
+<title>三平方の定理</title>
+<link>https://k3su.xyz/qm/threesqu.php</link>
+<description>三平方の定理と特別な直角三角形の問題出題ツールです。多くのパターンの問題を練習することができます。</description>
+<pubDate>Thu, 18 May 23 01:37:59 +0900</pubDate>
+</item>
+<item>
+<title>二乗に比例する関数</title>
+<link>https://k3su.xyz/qm/square-function.php</link>
+<description>二乗に比例する関数の問題出題ツールです。値や式を求めたり、変域や変化の割合を求める問題を何度でも出題することができます。問題の反復練習にご活用ください。</description>
+<pubDate>Thu, 18 May 23 01:36:32 +0900</pubDate>
+</item>
+<item>
+<title>二次方程式</title>
+<link>https://k3su.xyz/qm/quad-equation.php</link>
+<description>中学数学で習う二次方程式の問題出題ツールです。非常に多くのパターンの問題を出題することができます。回答もすぐ確認でき、間違えた箇所などを把握することができます。</description>
+<pubDate>Thu, 18 May 23 01:35:17 +0900</pubDate>
+</item>
+<item>
+<title>平方根(ルート)</title>
+<link>https://k3su.xyz/qm/root.php</link>
+<description>中学数学で習う平方根（ルート）に関する問題出題ツールです。平方根を求めたり、ルートの変形、ルートの計算などの問題を出題します。問題の反復練習にご利用ください。</description>
+<pubDate>Thu, 18 May 23 01:33:47 +0900</pubDate>
+</item>
+<item>
+<title>因数分解</title>
+<link>https://k3su.xyz/qm/factorization.php</link>
+<description>中学で習う範囲の因数分解の問題出題ツールです。条件やパターンを選択するだけで、その選択に応じた因数分解の問題を作成し出題します。解き方が異なる問題をランダムに出題することもできます。</description>
+<pubDate>Thu, 18 May 23 01:32:18 +0900</pubDate>
+</item>
+<item>
+<title>式の展開</title>
+<link>https://k3su.xyz/qm/unfoid.php</link>
+<description>式の展開の問題を出題するツールです。展開のパターンを指定することで問題を作成・出題します。問題の反復練習などにご利用ください。</description>
+<pubDate>Thu, 18 May 23 01:30:40 +0900</pubDate>
+</item>
+<item>
+<title>四分位数</title>
+<link>https://k3su.xyz/qm/quartile.php</link>
+<description>中学数学で習う四分位数・四分位範囲の問題出題ツールです。データの個数や並び順を選択すると問題が出題されます。</description>
+<pubDate>Thu, 18 May 23 01:29:12 +0900</pubDate>
+</item>
+<item>
+<title>一次関数</title>
+<link>https://k3su.xyz/qm/linear-function.php</link>
+<description>一次関数の問題出題ツールです。変化の割合・傾き・切片・式・変域を求める問題を何度でも解くことができます。</description>
+<pubDate>Thu, 18 May 23 01:27:38 +0900</pubDate>
+</item>
+<item>
+<title>連立方程式</title>
+<link>https://k3su.xyz/qm/sim-equation.php</link>
+<description>連立方程式の問題を出題するツールです。基本的な問題から応用問題までいろいろな形式の連立方程式の問題を作成し出題します。反復練習にもご利用ください。</description>
+<pubDate>Thu, 18 May 23 01:25:58 +0900</pubDate>
+</item>
+<item>
+<title>式の計算</title>
+<link>https://k3su.xyz/qm/formula-calc.php</link>
+<description>式の計算の問題出題ツールです。中学数学で習う式の計算の問題を何度でも反復練習できます。</description>
+<pubDate>Thu, 18 May 23 01:24:20 +0900</pubDate>
+</item>
+<item>
+<title>おうぎ形の面積と弧</title>
+<link>https://k3su.xyz/qm/sector.php</link>
+<description>おうぎ形の面積や弧の長さを求める問題を出題するツールです。中心角を求める問題も出題することができます。</description>
+<pubDate>Thu, 18 May 23 01:22:38 +0900</pubDate>
+</item>
+<item>
+<title>比例と反比例</title>
+<link>https://k3su.xyz/qm/prop.php</link>
+<description>中学数学で習う比例と反比例の問題出題ツールです。変数の値を求めたり式を求める問題は何度でも練習することができます。</description>
+<pubDate>Thu, 18 May 23 01:21:06 +0900</pubDate>
+</item>
+<item>
+<title>方程式</title>
+<link>https://k3su.xyz/qm/linear-equation.php</link>
+<description>一次方程式の問題を出題するツールです。パターンを指定することで自動的に方程式の問題を作成し出題します。問題の反復練習にも活用してください。</description>
+<pubDate>Thu, 18 May 23 01:19:24 +0900</pubDate>
+</item>
+<item>
+<title>文字式</title>
+<link>https://k3su.xyz/qm/char-exp.php</link>
+<description>中学１年の数学で習う文字式の問題出題ツールです。式の値を求めたり、文字式の加法・減法・乗法・除法の問題を何度でも練習することができます。</description>
+<pubDate>Thu, 18 May 23 01:17:32 +0900</pubDate>
+</item>
+<item>
+<title>素因数分解</title>
+<link>https://k3su.xyz/qm/prime-fact.php</link>
+<description>素因数分解の問題出題ツールです。素数と素因数分解の問題を出題できます。問題の反復練習にご活用ください。</description>
+<pubDate>Thu, 18 May 23 01:15:54 +0900</pubDate>
+</item>
+<item>
+<title>正負の数</title>
+<link>https://k3su.xyz/qm/plusminus.php</link>
+<description>中学１年で習う正負の数に関する問題出題ツールです。数の大小や四則計算、累乗などの問題を何度でも反復練習することができます。</description>
+<pubDate>Thu, 18 May 23 01:13:38 +0900</pubDate>
+</item>
+<item>
+<title>素数</title>
+<link>https://k3su.xyz/integer/primenumber.php</link>
+<description>入力された値が素数かどうかを判定します。素数かどうかを調べるのにご活用ください。</description>
+<pubDate>Fri, 24 Feb 23 11:22:23 +0900</pubDate>
+</item>
+<item>
+<title>連立方程式</title>
+<link>https://k3su.xyz/calc/sim-equation.php</link>
+<description>入力された連立方程式を解きます。計算方法は加減法・代入法のどちらかで解くことができます。A=B=Cの形の連立方程式にも対応しています。計算を解く過程の途中式も表示されます。</description>
+<pubDate>Fri, 30 Sep 22 16:31:59 +0900</pubDate>
+</item>
+<item>
+<title>二次方程式</title>
+<link>https://k3su.xyz/calc/quad-equation.php</link>
+<description>入力された二次方程式を解きます。複雑な因数分解や公式を使った計算が簡単におこなうことができます。</description>
+<pubDate>Fri, 30 Sep 22 16:31:32 +0900</pubDate>
+</item>
+<item>
+<title>文字式</title>
+<link>https://k3su.xyz/calc/char-exp.php</link>
+<description>入力された文字式の計算をおこないます。xやyなどの文字が含まれた数式の計算が簡単にできます。少数や分数の式にも対応。</description>
+<pubDate>Wed, 06 Jul 22 21:10:47 +0900</pubDate>
+</item>
+<item>
+<title>最大公約数</title>
+<link>https://k3su.xyz/integer/gcd.php</link>
+<description>最大公約数を求めたい２つの数を入力すると、自動で最大公約数を計算してくれます。３つ以上の数の最大公約数を求めることもできます。</description>
+<pubDate>Tue, 21 Jun 22 14:17:57 +0900</pubDate>
+</item>
+<item>
+<title>同値分数</title>
+<link>https://k3su.xyz/fraction/equi.php</link>
+<description>1/2=□/4のような穴抜きになった同値分数の値を計算します。同値分数の性質の理解にご活用ください。</description>
+<pubDate>Sat, 14 May 22 21:33:18 +0900</pubDate>
+</item>
+<item>
+<title>足し算</title>
+<link>https://k3su.xyz/calc/add.php</link>
+<description>算数の足し算を電卓のようにおこなえます。負の数や小数の足し算も可能で、答えから数式を割り出すこともできます。</description>
+<pubDate>Wed, 11 May 22 13:03:46 +0900</pubDate>
+</item>
+<item>
+<title>因数分解</title>
+<link>https://k3su.xyz/calc/factorization.php</link>
+<description>入力された式を因数分解します。面倒な因数分解を簡単におこなうことができます。複雑な因数分解では途中式も表示されますので解き方の手順がわかります。</description>
+<pubDate>Tue, 26 Apr 22 14:18:52 +0900</pubDate>
+</item>
+<item>
+<title>円柱の体積</title>
+<link>https://k3su.xyz/shape/volume-cyli.php</link>
+<description>半径と高さから円柱の体積を計算します。体積から半径や高さを計算することもできます。</description>
+<pubDate>Thu, 02 Dec 21 14:43:48 +0900</pubDate>
+</item>
+</channel>
+</rss>
+ 
