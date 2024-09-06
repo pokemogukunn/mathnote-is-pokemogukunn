@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="ja">
+ 
+	<head>
+	<meta charset="utf-8">
+	<title>混合演算 - 計算が簡単にできる電卓サイト</title>
+ 
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="description" content="足し算・引き算・掛け算・割り算を混合して計算できます。負の数や小数の足し算も可能です。" />
+	<meta name="keywords" content="算数,電卓,混合演算" />
+	
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+ 
+	<meta property="og:title" content="混合演算 - 計算が簡単にできる電卓サイト" />
+	<meta property="og:description" content="足し算・引き算・掛け算・割り算を混合して計算できます。負の数や小数の足し算も可能です。" />
+		<meta property="og:type" content="article" />
+		<meta property="og:url" content="https://k3su.xyz/calc/mix.php" />
+	<meta property="og:site_name" content="算数の電卓" />
+	<meta property="og:locale" content="ja_JP"  />
+ 
+ 
+	<link rel="icon" type="image/x-icon" href="../_image/fav.ico">
+	<link rel="apple-touch-icon" href="../_image/fav.png" sizes="180x180">
+	
+	<link rel="altarnate" type="application/rss+xml" title="RSS2.0" href="https://k3su.xyz/rss.xml" />
+	<link rel="altarnate" type="application/atom+xml" title="ATOM" href="https://k3su.xyz/atom.xml" />
+	
+	<link rel="stylesheet" href="../_css/all.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Kotta+One&display=swap" rel="stylesheet">
+	
+	<script src="../_js/css_browser_selector.js"></script>
+		<link rel="stylesheet" href="../_css/style.css?20230318">
+	
+	<script src="../_js/jquery-1.8.3.min.js"></script>
+	<script src="../_js/menu.js"></script>
+	<script src="../_js/movetop.js"></script>
+	<script src="../_js/calc.js?202003234"></script>
+	<script src="../_js/search.js"></script>
+ 
+ 
+			<script src="../_anlz/"></script>
+ 
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-KP75ESTN6J"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+		
+		  gtag('config', 'UA-159383779-3');
+		  gtag('config', 'G-KP75ESTN6J');
+		</script>
+ 
+		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9242622843425228" crossorigin="anonymous"></script>
+	
+	
+ 
+</head>
+ 
+	<body>
+<script type="text/javascript" src="https://ad.xdomain.ne.jp/js/server-php.js"></script>
+		<div id="wrapper">
+	
+			<header>
+	<div id="header_main" class="width">
+		<a href="../">
+			<img src="../_image/title2.png" alt="算数の電卓" id="header_title">
+					</a>
+ 
+		<div id="header_search">
+			<script async src='https://cse.google.com/cse.js?cx=partner-pub-9242622843425228:5vzjqwjycko'></script><div class="gcse-searchbox-only"></div>
+			<a href="#" id="header_search_cancel"><i class="fas fa-times"></i></a>
+		</div>
+	
+		<nav id="global_menu">
+			<ul>
+				<li><a href="../" class="link_header_menu"><i class="fas fa-home"></i><br>ホーム</a></li>
+				<li id="global_menu_search"><a href="#" class="link_header_menu"><i class="fas fa-search"></i><br>検索</a></li>
+				<li><a href="../sitemap.php" class="link_header_menu"><i class="fas fa-bars"></i><br>メニュー</a></li>
+			</ul>
+		</nav>
+	</div>
+</header>
+			
+			<div id="contents" class="width">
+ 
+				<main class="main_page">
+ 
+					<article>
+ 
+						<h1 class="head_a">『混合演算』の電卓</h1>
+						
+						<div class="mg_b_20 link_qmlist_calc">
+	<a href="https://k3su.xyz/app/" class="fc_b">中学生向け数学の無料問題集アプリ</a>
+</div>
+						<div class="counter_display fc_gy mg_b_20 mg_t_10">この電卓は<span class="fw_b mg_r_5 mg_l_5">8万9228回</span>使われています</div>						
+						<div class="sec_mg_b">
+	<div id="area_msg"></div>
+	<div class="area_calc">
+		<div class="flex flex_ai_s flex_fw_w" id="input">
+			<!-- <input type="number" class="js_clear_val js_input calc_num mg_r_5 mg_b_5" style="width:calc((100% - 210px) / 3);min-width:80px;"> -->
+			<div class="gi_input js_clear_gi calc_num mg_r_5 mg_b_5" data-on="1" data-digi="1" data-sign="1" data-group="1" style="width:calc((100% - 210px) / 3);min-width:80px;">
+				<span class="gi_i gi_i_last"></span>
+			</div>
+			<span class="btn_ddg mg_r_5 mg_b_5" data-menu="ddg_calc_menu" style="width:60px;"></span>
+			<input type="hidden" class="ddg_value calc_clac" value="1">
+			<!-- <input type="number" class="js_clear_val js_input calc_num mg_r_5 mg_b_5" style="width:calc((100% - 210px) / 3);min-width:80px;"> -->
+			<div class="gi_input js_clear_gi calc_num mg_r_5 mg_b_5" data-on="2" data-digi="1" data-sign="1" data-group="1" style="width:calc((100% - 210px) / 3);min-width:80px;">
+				<span class="gi_i gi_i_last"></span>
+			</div>
+			<span class="btn_ddg mg_r_5 mg_b_5" data-menu="ddg_calc_menu" style="width:60px;"></span>
+			<input type="hidden" class="ddg_value calc_clac" value="1">
+			<!-- <input type="number" class="js_clear_val js_input calc_num mg_r_5 mg_b_5" style="width:calc((100% - 210px) / 3);min-width:80px;"> -->
+			<div class="gi_input js_clear_gi calc_num mg_r_5 mg_b_5" data-on="3" data-digi="1" data-sign="1" data-group="1" style="width:calc((100% - 210px) / 3);min-width:80px;">
+				<span class="gi_i gi_i_last"></span>
+			</div>
+		</div>
+	
+		<input type="hidden" id="gi_run" value="#btn_calc" data-name="計算">
+		<div id="gi_kb" style="display:none;">			
+	<div class="width pd_0" style="position:relative;">
+		<div class="gi_kb_msg tab_none sp_none">キーボードでも入力可</div>
+		<table class="gi_kb_tbl">
+			<tr>
+				<!-- <td><div class="gi_kb_btn_h gi_kb_cl"><i class="fas fa-arrow-left"></i></div></td> -->
+				<!-- <td><div class="gi_kb_btn_h gi_kb_cr"><i class="fas fa-arrow-right"></i></div></td> -->
+				<!-- <td><div class="gi_kb_btn_h gi_kb_bs"><i class="fas fa-backspace"></i></div></td> -->
+				<td><div class="gi_kb_btn_h gi_kb_ib lh_1 gi_kb_pckey_fs"><i class="fas fa-caret-left fs_12em"></i><span class="gi_kb_pckey">[ shift + tab ]</span></div></td>
+				<td><div class="gi_kb_btn_h gi_kb_ia lh_1 gi_kb_pckey_fs"><i class="fas fa-caret-right fs_12em"></i><span class="gi_kb_pckey">[ tab ]</span></div></td>
+				<td><div class="gi_kb_btn_h gi_kb_clear lh_12 gi_kb_pckey_fs">クリア<span class="gi_kb_pckey">[ space ]</span></div></td>
+				<td><div class="gi_kb_btn_h gi_kb_comp lh_12 gi_kb_pckey_fs">閉じる<span class="gi_kb_pckey">[ esc ]</span></div></td>
+			</tr>
+			<tr>
+				<td><div class="gi_kb_btn gi_kb_num">1</div></td>
+				<td><div class="gi_kb_btn gi_kb_num">2</div></td>
+				<td><div class="gi_kb_btn gi_kb_num">3</div></td>
+				<td rowspan="2"><div class="gi_kb_btn_s gi_kb_bs lh_12 gi_kb_pckey_fs"><i class="fas fa-backspace fs_12em"></i><span class="gi_kb_pckey">[ backspace ]<br>[ delete ]</span></div></td>
+			</tr>
+			<tr>
+				<td><div class="gi_kb_btn gi_kb_num">4</div></td>
+				<td><div class="gi_kb_btn gi_kb_num">5</div></td>
+				<td><div class="gi_kb_btn gi_kb_num">6</div></td>
+			</tr>
+			<tr>
+				<td><div class="gi_kb_btn gi_kb_num">7</div></td>
+				<td><div class="gi_kb_btn gi_kb_num">8</div></td>
+				<td><div class="gi_kb_btn gi_kb_num">9</div></td>
+				<td rowspan="2"><div class="gi_kb_btn_run gi_kb_pckey_fs">計算</div></td>
+			</tr>
+			<tr>
+				<td><div class="gi_kb_btn gi_kb_num">0</div></td>
+				<td><div class="gi_kb_btn gi_kb_num gi_kb_digi">.</div></td>
+				<td><div class="gi_kb_btn gi_kb_sign">+/-</div></td>
+			</tr>
+		</table>
+	</div>
+</div>
+<script src="../_js/gi.js?20210906"></script>
+ 
+ 
+ 
+ 
+ 
+		<p class="mg_b_0">
+			<button id="btn_calc" class="mg_r_10">計算</button>
+			<button id="btn_inputadd" class="btn_gy mg_r_10">入力追加</button>
+			<button id="btn_clear_gi" class="">クリア</button>
+		</p>
+	
+		<div id="ans" class="area_ans2 wdh_100 js_clear_display" style="display:none;">
+			= <span id="result"></span>
+		</div>
+	
+	</div>
+ 
+	
+	
+	<p class="mg_b_5 al_c fc_gy fs_08em" style="margin-top: 80px;">スポンサーリンク</p>	
+	<div class="flex flex_jc_sa area_ads"> 
+		<div class="" style="width: 300px;">
+			
+				<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9242622843425228" crossorigin="anonymous"></script>
+				<!-- 電卓左下 -->
+				<ins class="adsbygoogle"
+				     style="display:block"
+				     data-ad-client="ca-pub-9242622843425228"
+				     data-ad-slot="9794945761"
+				     data-ad-format="rectangle"
+				     data-full-width-responsive="false"></ins>
+				<script>
+				     (adsbygoogle = window.adsbygoogle || []).push({});
+				</script>
+ 
+					</div>
+		
+		<div class="sp_none mg_l_10" style="width: 300px;">
+			
+				<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9242622843425228" crossorigin="anonymous"></script>
+				<!-- 電卓右下210620 -->
+				<ins class="adsbygoogle"
+				     style="display:block"
+				     data-ad-client="ca-pub-9242622843425228"
+				     data-ad-slot="3790677131"
+				     data-ad-format="rectangle"
+				     data-full-width-responsive="false"></ins>
+				<script>
+				     (adsbygoogle = window.adsbygoogle || []).push({});
+				</script>
+ 
+					</div>
+ 
+	</div>
+	
+</div>
+ 
+<p class="mg_b_5 fc_gy al_c"><i class="fas fa-angle-double-down mg_r_5"></i>このページを友達に教える</p>
+<div class="area_sns3 mg_b_20">
+	<a href="http://line.me/R/msg/text/?https%3A%2F%2Fk3su.xyz%2Fcalc%2Fmix.php" rel="nofollow" target="_blank"><i class="fab fa-line"></i>LINEで送る</a>
+	<a href="https://twitter.com/intent/tweet?text=%E6%B7%B7%E5%90%88%E6%BC%94%E7%AE%97+-+%E8%A8%88%E7%AE%97%E3%81%8C%E7%B0%A1%E5%8D%98%E3%81%AB%E3%81%A7%E3%81%8D%E3%82%8B%E9%9B%BB%E5%8D%93%E3%82%B5%E3%82%A4%E3%83%88+%23%E6%B7%B7%E5%90%88%E6%BC%94%E7%AE%97&url=https%3A%2F%2Fk3su.xyz%2Fcalc%2Fmix.php" rel="nofollow" target="_blank"><i class="fab fa-twitter-square"></i>Twitterでつぶやく</a>
+	<a href="#" class="copy_url area_sns2_url"><i class="fas fa-link"></i>URLをコピーする</a>
+</div>
+ 
+<p id="area_htu_title">電卓の使い方</p>
+<div id="area_htu_list" class="mg_b_20">
+	<p>計算をおこなう数値と演算子（+ - × ÷）を入力して「計算」ボタンを押してください。</p>
+	<p>小数やマイナスでの計算もできます。</p>
+	<p>入力欄が足りない場合には「入力追加」ボタンを押すと入力欄が追加されます。</p>
+	<p>計算をやり直す場合は「クリア」ボタンを押すと入力された数値が削除されます。</p>
+</div>
+ 
+<p id="area_toc_title">目次</p>
+<ul id="area_toc_list" class="sec_mg_b">
+	<li><a href="#head_1">混合演算の解説</a></li>
+	<li class="mg_l_20"><a href="#head_1_1">足し算・引き算を先に計算したい場合</a></li>
+	<li><a href="#head_2">混合演算の問題例</a></li>
+	<li><a href="#head_3">関連ページ</a></li>
+</ul>
+ 
+<div class="sec_mg_b pc_none tab_none">
+	<p class="mg_b_5 al_c fc_gy fs_08em" style="margin-top: 80px;">スポンサーリンク</p>	
+	<div class="flex flex_jc_sa area_ads"> 
+		<div class="" style="width: 300px;">
+					
+				<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9242622843425228" crossorigin="anonymous"></script>
+				<!-- 解説上 -->
+				<ins class="adsbygoogle"
+				     style="display:block"
+				     data-ad-client="ca-pub-9242622843425228"
+				     data-ad-slot="2859394912"
+				     data-ad-format="rectangle"
+				     data-full-width-responsive="false"></ins>
+				<script>
+				     (adsbygoogle = window.adsbygoogle || []).push({});
+				</script>
+ 
+					</div>
+			
+	</div>
+</div>
+ 
+<section class="sec_mg_b">
+	<h2 class="head_b" id="head_1">混合演算の解説</h2>
+	<p>四則演算（足し算、引き算、掛け算、割り算）を混合して計算する場合、計算をおこなう順序に気をつけなければいけません。基本的に計算は左から順番におこなっていきますが、掛け算と割り算は足し算と引き算よりも先に計算をおこなわなければいけません。</p>
+	<div class="area_ex p_mg_b">
+		4 + 2 × 3<br>
+		= 4 + 6　※先に掛け算をおこなう<br>
+		= 10
+	</div>
+ 
+	<div class="area_ex p_mg_b">
+		8 - 6 ÷ 3<br>
+		= 8 - 2　※先に割り算をおこなう<br>
+		= 6
+	</div>
+ 
+	<div class="area_ex p_mg_b">
+		3 + 2 × 4 - 2<br>
+		= 3 + 8 - 2　※先に掛け算をおこなう<br>
+		= 9
+	</div>
+ 
+	<div class="area_ex p_mg_b">
+		2 + 2 × 6 ÷ 3<br>
+		= 2 + 4　※先に掛け算・割り算を左からおこなう<br>
+		= 6
+	</div>
+ 
+	<p class="sec_mg_b">足し算・引き算を掛け算・割り算よりも先にやってしまうと答えが違う数になってしまうので注意しましょう。もしこういう場合はどうなるんだろう?と思うときは上の電卓を使って試してみてください。</p>
+ 
+	<section class="sec_mg_b">
+		<h3 class="head_c" id="head_1_1">足し算・引き算を先に計算したい場合</h3>
+		<p>計算によっては足し算・引き算を先に計算したいということもあります。こういう場合にはかっこ（）を使います。かっこがあった場合は、かっこの中を一番はじめに計算します。</p>
+		<div class="area_ex">
+			(4 + 2) × 3<br>
+			= 6 × 3　※かっこの中を先に計算<br>
+			= 18
+		</div>
+	</section>
+ 
+		
+<p class="mg_b_5 al_c fc_gy fs_08em sec_mg_t" style="margin-top: 80px;">スポンサーリンク</p>	
+<div class="flex flex_jc_sa area_ads"> 
+	<div class="" style="width: 300px;">
+		
+			<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9242622843425228" crossorigin="anonymous"></script>
+			<!-- 解説下左 -->
+			<ins class="adsbygoogle"
+			     style="display:block"
+			     data-ad-client="ca-pub-9242622843425228"
+			     data-ad-slot="5093293120"
+			     data-ad-format="rectangle"
+			     data-full-width-responsive="false"></ins>
+			<script>
+			     (adsbygoogle = window.adsbygoogle || []).push({});
+			</script>
+ 
+			</div>
+	
+	<div class="sp_none mg_l_10" style="width: 300px;">
+		
+			<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9242622843425228" crossorigin="anonymous"></script>
+			<!-- 解説下右 -->
+			<ins class="adsbygoogle"
+			     style="display:block"
+			     data-ad-client="ca-pub-9242622843425228"
+			     data-ad-slot="9383891920"
+			     data-ad-format="rectangle"
+			     data-full-width-responsive="false"></ins>
+			<script>
+			     (adsbygoogle = window.adsbygoogle || []).push({});
+			</script>
+ 
+			</div>
+ 
+</div>
+ 
+ 
+</section>
+ 
+<section class="sec_mg_b">
+	<h2 class="head_b" id="head_2">混合演算の問題例</h2>
+ 
+	<div class="area_ex_q">
+		5+3×4はいくつでしょう?
+	</div>
+	<div class="area_ex_a">
+		= 5 + 12<br>
+		= 17
+	</div>
+ 
+	<div class="area_ex_q">
+		8-12÷6+3はいくつでしょう?
+	</div>
+	<div class="area_ex_a">
+		= 8 - 2 + 3<br>
+		= 9
+	</div>
+ 
+	<div class="area_ex_q">
+		(1+3)+8×3はいくつでしょう?
+	</div>
+	<div class="area_ex_a">
+		= 4 + 8 × 3<br>
+		= 4 + 24<br>
+		= 28
+	</div>
+ 
+ 
+</section>
+ 
+ 
+<section class="">
+	<h2 class="head_b" id="head_3">関連ページ</h2>
+	<ul class="list_relation">
+		<li><a href="../calc/add.php">足し算</a></li>
+		<li><a href="../calc/sub.php">引き算</a></li>
+		<li><a href="../calc/mul.php">掛け算</a></li>
+		<li><a href="../calc/div.php">割り算</a></li>
+		<li><a href="../calc/dist.php">分配法則</a></li>
+	</ul>
+</section>
+ 
+<ul id="ddg_calc_menu" class="dd_menu">
+	<li><a href="#" data-value="1" class="ddg_menu_option"><i class="fas fa-plus"></i></a></li>
+	<li><a href="#" data-value="2" class="ddg_menu_option"><i class="fas fa-minus"></i></a></li>
+	<li><a href="#" data-value="3" class="ddg_menu_option"><i class="fas fa-times"></i></a></li>
+	<li><a href="#" data-value="4" class="ddg_menu_option"><i class="fas fa-divide"></i></a></li>
+</ul>
+ 
+ 
+<script src="../_js/dropdown_gp.js"></script>
+ 
+ 
+<script>
+var counter_num = 0;
+var ads_counter = 0;
+var counter_id = 1571969218;
+var doAjaxBeforeUnloadEnabled = true;
+ 
+var doAjaxBeforeUnload = function (evt) {
+	if (!doAjaxBeforeUnloadEnabled) { return; }
+	doAjaxBeforeUnloadEnabled = false;
+	counter_request(true);
+}
+ 
+var doAjaxPageHide = function (evt) {
+	if (!doAjaxBeforeUnloadEnabled) { return; }
+	doAjaxBeforeUnloadEnabled = false;
+	counter_request(false);
+}
+ 
+function counter_request(flg){
+	if(counter_num > 0){
+	    $.ajax({
+	    	async : flg,
+	        url : "../_lib/counter.php?i=" + counter_id + "&c=" + counter_num,
+	        type: "GET",
+	  		dataType: 'json',
+			data: '',
+	        success: function(response) {
+	        },
+	        error: function(xhr) {
+	        }
+	    });			
+		counter_num = 0;		
+	}
+	
+	//ads_counter++;
+	//if(ads_counter > 2){ 
+	//	$('.area_ads').hide(); 
+	//}
+	
+}
+ 
+$(document).ready(function () {
+	window.onbeforeunload = doAjaxBeforeUnload;
+	window.onpagehide = doAjaxPageHide;
+});
+ 
+function setVisibilityEvent(){
+	var hidden, visibilityChange;
+	if (typeof document.hidden !== "undefined") {
+		hidden = "hidden";
+		visibilityChange = "visibilitychange";
+	} else if (typeof document.mozHidden !== "undefined") {
+		hidden = "mozHidden";
+		visibilityChange = "mozvisibilitychange";
+	} else if (typeof document.msHidden !== "undefined") {
+ 		hidden = "msHidden";
+		visibilityChange = "msvisibilitychange";
+	} else if (typeof document.webkitHidden !== "undefined") {
+		hidden = "webkitHidden";
+		visibilityChange = "webkitvisibilitychange";
+	}
+	document.addEventListener(visibilityChange, function(){
+		if(document.hidden){
+			counter_request(true);
+    	}
+	}, false);
+}
+ 
+setVisibilityEvent();
+ 
+ 
+$(function() {
+ 
+	$("#btn_inputadd").click(function(){
+ 
+		$('#input').append('<span class="btn_ddg mg_r_5 mg_b_5 js_clear_remove" data-menu="ddg_calc_menu" style="width:60px;"></span>');
+		$('#input').append('<input type="hidden" class="ddg_value calc_clac js_clear_remove" value="1">');
+		//$('#input').append('<input type="number" class="js_clear_val js_clear_remove js_input calc_num mg_r_5 mg_b_5" style="width:calc((100% - 210px) / 3);min-width:80px;">');
+		var input_num = $('.gi_input').length + 1;
+		$('#input').append('<div class="gi_input js_clear_gi js_clear_remove calc_num mg_r_5 mg_b_5" data-on="' + input_num + '" data-digi="1" data-sign="1" data-group="1" style="width:calc((100% - 210px) / 3);min-width:80px;"><span class="gi_i gi_i_last"></span></div>');
+		ddg_init();
+		return false;
+	});
+ 
+	$("#btn_calc").click(function(){
+		msg_hide();
+		$(".js_clear_display").css('display', 'none');
+		gi_kb_hide();
+ 
+		counter_num++;
+ 
+		var ary_num = [];
+		var ary_cal = [];
+		var num = "";
+		var cal;
+		var val;
+		var cal_bef;
+		$('.calc_num').each(function() {
+			cal = $(this).nextAll('.calc_clac').val();
+			//val = $(this).val();
+			val = gi_get( $(this) );
+			if(val==""){ val=0; }
+			if(cal==3 || cal==4){
+				if(num==""){
+					num = val;
+				}else{
+					num = calcDigit(num, val, cal_bef);
+				}
+				cal_bef = cal;
+			}else{
+				if(num==""){
+					ary_num.push(Number(val));
+					ary_cal.push(cal);
+				}else{
+					num = calcDigit(num, val, cal_bef);
+					ary_num.push(num);
+					ary_cal.push(cal);
+					num = "";
+				}
+			}
+		});
+ 
+		var j;
+		num = ary_num[0];
+		for(let i=1;i<ary_num.length;i++){
+			j = i - 1;
+			num = calcDigit(num, ary_num[i], ary_cal[j]);		
+		}
+		
+		$("#result").html(num);
+		$('#ans').css('display', 'block');
+		
+		return false;
+	});
+ 
+ 
+ 
+});	
+</script>
+ 
+ 
+						<section class="sec_mg_t">
+	<h2 class="head_b">よく見られているページ</h2>
+	<dl class="dl_popular">
+ 
+		<dt><a href="../fraction/aboutminutes.php">約分の電卓</a></dt>
+		<dd>分母と分子を入力すると約分された分数を表示する電卓です。大きい数の分数でも簡単に約分をおこなうことができます。</dd>
+ 
+		<dt><a href="../fraction/mix.php">分数の混合計算の電卓</a></dt>
+		<dd>分数の四則演算ができる電卓です。３つ以上の分数の計算をおこなったり整数や帯分数との計算にも対応しています。</dd>
+ 
+		<dt><a href="../calc/factorization.php">因数分解の電卓</a></dt>
+		<dd>入力された式を因数分解できる電卓です。解き方がいくつもある因数分解ですが、この電卓を使えば簡単に因数分解がおこなえます。</dd>
+ 
+		<dt><a href="../calc/sim-equation.php">連立方程式の電卓</a></dt>
+		<dd>２つの方程式を入力することで連立方程式として解くことができる電卓です。計算方法は加減法または代入法で選択でき、途中式も表示されます。</dd>
+ 
+		<dt><a href="../qm/">中学数学の問題出題ツール一覧</a></dt>
+		<dd>中学数学の問題をプログラムで作成して出題するツールです。問題を何度でも解く練習ができて答えもすぐに確認することができます。</dd>
+ 
+		<dt><a href="../qm/factorization.php">因数分解の問題出題ツール</a></dt>
+		<dd>因数分解の問題を出題するツールです。条件を指定することで因数分解の問題が出題され、反復練習に役に立つツールです。</dd>
+ 
+ 
+		<!--
+		<dt><a href="../fraction/pass.php">通分の電卓</a></dt>
+		<dd>分数を通分できる電卓です。３つ以上の分数を通分することもできます。</dd>
+ 
+		<dt><a href="../integer/gcd.php">最大公約数の電卓</a></dt>
+		<dd>２つの数を入力すると、それらの最大公約数を計算して表示する電卓です。３つ以上の数の最大公約数を求めることにも対応しています。</dd>
+		-->
+		
+	</dl>
+</section>
+						<div class="area_mainfooter">
+		
+	<a href="http://line.me/R/msg/text/?https%3A%2F%2Fk3su.xyz%2Fcalc%2Fmix.php" rel="nofollow" target="_blank" class="area_mainfooter_link flex flex_jc_sb flex_ai_c mg_b_10">
+		<i class="fab fa-line mg_r_10" style="font-size:60px;" ></i>
+		<div style="width: 100%;">
+			LINE<br>
+			<span style="color:#ccc;font-size:0.9em;">混合演算の電卓ページURLをLINEで友達に送ることができます</span>
+		</div>
+	</a>
+ 
+	<a href="https://twitter.com/intent/tweet?text=%E6%B7%B7%E5%90%88%E6%BC%94%E7%AE%97+-+%E8%A8%88%E7%AE%97%E3%81%8C%E7%B0%A1%E5%8D%98%E3%81%AB%E3%81%A7%E3%81%8D%E3%82%8B%E9%9B%BB%E5%8D%93%E3%82%B5%E3%82%A4%E3%83%88&url=https%3A%2F%2Fk3su.xyz%2Fcalc%2Fmix.php" rel="nofollow" target="_blank" class="area_mainfooter_link flex flex_jc_sb flex_ai_c mg_b_10">
+		<i class="fab fa-twitter-square mg_r_10" style="font-size:60px;" ></i>
+		<div style="width: 100%;">
+			Twitter<br>
+			<span style="color:#ccc;font-size:0.9em;">混合演算の電卓ページURLをTwitterでつぶやいて共有できます</span>
+		</div>
+	</a>
+ 
+	<a href="#" class="area_mainfooter_link copy_url flex flex_jc_sb flex_ai_c mg_b_0">
+		<i class="fas fa-clipboard al_c mg_r_10" style="font-size:60px;width:60px;" ></i>
+		<div style="width: 100%;">
+			URLコピー<br>
+			<span style="color:#ccc;font-size:0.9em;" id="area_mainfooter_url">https://k3su.xyz/calc/mix.php</span>
+		</div>
+	</a>
+ 
+</div>
+ 
+ 
+					</article>
+				</main>
+				
+				<aside id="sidebar">
+ 
+	<!--
+	<div class="sidebar_ad">
+		<div style="width:100%;height:250px;background:#dcdcdc;">
+			広告
+		</div>
+	</div>
+	-->
+ 
+	
+	<p class="mg_b_5 al_c fc_gy fs_08em" style="">スポンサーリンク</p>	
+			<div style="width: 300px !important; height: 250px !important;margin-bottom:20px;">
+ 
+ 
+			<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9242622843425228" crossorigin="anonymous"></script>
+			<!-- サイドバー上縦長 -->
+			<ins class="adsbygoogle"
+			     style="display:block"
+			     data-ad-client="ca-pub-9242622843425228"
+			     data-ad-slot="3338816492"
+			     data-ad-format="auto"
+			     data-full-width-responsive="true"></ins>
+			<script>
+			     (adsbygoogle = window.adsbygoogle || []).push({});
+			</script>
+ 
+ 
+		</div>
+	
+ 
+	</ul><p class="sidebar_title">計算</p><ul class="sidebar_list"><li><a href="../calc/add.php">足し算</a></li><li><a href="../calc/sub.php">引き算</a></li><li><a href="../calc/mul.php">掛け算</a></li><li><a href="../calc/div.php">割り算</a></li><li><a href="../calc/mix.php">混合演算</a></li><li><a href="../calc/dist.php">分配法則</a></li><li><a href="../calc/percent.php">百分率(パーセント)</a></li><li><a href="../calc/power.php">累乗・べき乗</a></li><li><a href="../calc/root.php">平方根・累乗根</a></li><li><a href="../calc/root-simple.php">ルートの中を簡単にする</a></li><li><a href="../calc/root-calc.php">ルートの計算</a></li><li><a href="../calc/char-exp.php">文字式</a></li><li><a href="../calc/linear-equation.php">方程式</a></li><li><a href="../calc/quad-equation.php">二次方程式</a></li><li><a href="../calc/sim-equation.php">連立方程式</a></li><li><a href="../calc/linear-function.php">一次関数</a></li><li><a href="../calc/square-function.php">二乗に比例する関数</a></li><li><a href="../calc/unfoid.php">式の展開</a></li><li><a href="../calc/factorization.php">因数分解</a></li><li><a href="../calc/cross.php">因数分解(たすき掛け)</a></li><li><a href="../calc/linear-inequality.php">一次不等式</a></li><li><a href="../calc/double-root.php">二重根号を外す</a></li></ul>
+	<p class="sidebar_title">よく見られているページ</p>
+	<ul class="sidebar_list">
+		<li><a href="../fraction/aboutminutes.php">約分</a></li>
+		<li><a href="../fraction/mix.php">分数の混合計算</a></li>
+		<li><a href="../calc/factorization.php">因数分解</a></li>
+		<li><a href="../calc/sim-equation.php">連立方程式</a></li>
+		<li><a href="../fraction/pass.php">通分</a></li>
+		<li><a href="../calc/linear-equation.php">方程式</a></li>
+		<li><a href="../qm/">中学数学の問題出題ツール一覧</a></li>
+	</ul>
+ 
+	<div class="sidebar_ad area_ads">
+		<p class="mg_b_5 fc_gy al_c fs_08em">スポンサーリンク</p>
+		
+			<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9242622843425228" crossorigin="anonymous"></script>
+			<!-- サイドバー -->
+			<ins class="adsbygoogle"
+			     style="display:block"
+			     data-ad-client="ca-pub-9242622843425228"
+			     data-ad-slot="9672071461"
+			     data-ad-format="auto"
+			     data-full-width-responsive="true"></ins>
+			<script>
+			     (adsbygoogle = window.adsbygoogle || []).push({});
+			</script>
+	
+	
+			</div>
+ 
+ 
+</aside>
+ 
+			</div>
+			<nav id="contents_footer_calc">
+				<a href="../sitemap.php"><i class="fas fa-chevron-circle-right mg_r_5"></i>ページ一覧へ</a>
+			</nav>
+			
+			<footer>
+	<div id="footer_main" class="width">
+		<p id="footer_title">
+			<img src="../_image/title_footer.png" alt="算数の電卓" style="width:44px;height:auto;">
+		</p>
+	
+		<nav id="footer_menu">
+			<ul>
+				<li><a href="../">算数の電卓TOP</a></li>
+				<li><a href="../use.php">ご利用について</a></li>
+				<li><a href="../privacy.php">プライバシーポリシー</a></li>
+				<li><a href="../contact.php">お問い合わせ</a></li>
+				<li><a href="../sitemap.php">サイトマップ</a></li>
+			</ul>
+		</nav>
+		
+		<p id="footer_copyright">
+			Copyright &copy;　算数の電卓　All Rights Reserved.
+					</p>
+		
+		
+ 
+	</div>
+</footer>
+ 
+				
+		</div>
+		
+	</body>
+</html>
